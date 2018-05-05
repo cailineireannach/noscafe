@@ -152,33 +152,59 @@
 
 	/* ---ABOUT PAGE--- */
 
-	/*.sections {
+	.sections {
 	    width: 100%;
 	    height: 275px;
-	 	background-color: #dbdad8;
+	 	  background-color: #dbdad8;
 	}
 
-	.sections img {
-		width: 380px;
-		height: 215;
-		margin: 30px 10px 30px 860px;
-	}
+  .sections h2 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #79a08a;
+    font-size: 20px;
+  }
 
-	.sections h2, p {
-	    float: left;
-		padding: 20px;
-	}*/
+  .text {
+    font-size: 15px;
+    flex: 1;
+    background-color: #c7d7ce;
+    padding: 40px;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  .sections img {
+    border-radius: 15px 0px 0px 15px;
+  }
 
 	/*SECTION 1*/
-
+    #section1 {
+      display: flex;
+      padding: 30px;
+    }
 
 	/*SECTION 2*/
-	#section2 img {
-		margin: 30px 800px 30px 10px;
-	}
+    #section2 {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+  }
+
+  #section2 .text {
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  #section2 img {
+    order: 2;
+    border-radius: 0px 15px 15px 0px;
+  }
 
 	/*SECTION 3*/
-	}
+  #section3 {
+    display: flex;
+    padding: 30px;
+  }
+
 
 	/* ---EVENTS PAGE--- */
 
