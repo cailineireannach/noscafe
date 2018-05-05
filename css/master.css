@@ -1,0 +1,218 @@
+
+    /*CLEARFIX*/
+    html {
+       box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+       box-sizing: inherit;
+    }
+
+    /*BODY*/
+    body {
+	   font-family: 'Comfortaa', cursive, sans-serif;
+	   width: 1260px;
+	   margin: auto;
+	   background-color: #d3d3d3;
+    }
+
+	a {
+	   text-decoration: none;
+	   color: #90af9d;
+	}
+
+	/*HEADER*/
+	header {
+		display: flex;
+		background-color: #f9f9f9;
+	}
+
+	#logo {
+        clear: left;
+	}
+
+	nav {
+		display: flex;
+		width: 100%;
+	}
+
+	nav a {
+		line-height: 170px;
+		flex: 1;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	nav a:hover {
+		 text-shadow: 0px 0px 4px #A8B5AE;
+		 font-size: 23px;
+	}
+
+	/* ---HOMEPAGE--- */
+
+	/*SLIDER*/
+	#slider {
+		height: 305px;
+	}
+
+	/*EVENTS*/
+	#events {
+		display: flex;
+		border-top: 10px solid #f9f9f9;
+		border-bottom: 10px solid #f9f9f9;
+	}
+
+	#events img {
+		opacity: 0.5;
+	}
+
+	#event1:hover img{
+	    opacity: 1;
+	}
+
+  #event2:hover img{
+      opacity: 1;
+  }
+
+  #event3:hover img{
+      opacity: 1;
+  }
+
+  #event4:hover img{
+      opacity: 1;
+  }
+
+	/*BOTTOM*/
+	#bottom {
+		display: flex;
+		height: 306px;
+	}
+
+	#info {
+		display: flex;
+		width: 560px;
+		background-color: #636363;
+		padding: 60px;
+	}
+
+	#info img {
+		height: 120px;
+		width: 120px;
+	}
+
+	#info #information {
+		padding-left: 35px;
+		padding-top: 20px;
+		width: 400px;
+		/*background-color: red;*/
+	}
+
+	#info #information span {
+		color: #90af9d;
+	}
+
+	#info #information p {
+		flex: 1;
+		color: #fff;
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	#social li {
+	    line-height: 40px;
+	}
+
+	#social li a{
+	   font-size: 16px;
+	}
+
+	#social li a:hover {
+	  text-shadow: 0px 0px 4px #A8B5AE;
+	}
+
+    #message {
+		width: 700px;
+		background-color: #c8d8cf;
+		padding: 80px;
+		text-align: center;
+	}
+
+	#message h2 {
+		font-size: 20px;
+		color: #90af9d;
+		padding: 5px;
+	}
+
+	#message p {
+		font-size: 16px;
+		color: #fff;
+		text-justify: auto;
+		padding-top: 20px;
+	}
+
+	/* ---ABOUT PAGE--- */
+
+	/*.sections {
+	    width: 100%;
+	    height: 275px;
+	 	background-color: #dbdad8;
+	}
+
+	.sections img {
+		width: 380px;
+		height: 215;
+		margin: 30px 10px 30px 860px;
+	}
+
+	.sections h2, p {
+	    float: left;
+		padding: 20px;
+	}*/
+
+	/*SECTION 1*/
+
+
+	/*SECTION 2*/
+	#section2 img {
+		margin: 30px 800px 30px 10px;
+	}
+
+	/*SECTION 3*/
+	}
+
+	/* ---EVENTS PAGE--- */
+
+	/* ---MENU PAGE---*/
+
+	/* ---CONTACT PAGE--- */
+
+	/*CONTACT INFO*/
+	#contactinfo {
+		width: 420px;
+		background-color: #d6d6d6;
+	}
+
+    /*CONTACT FORM*/
+	#contactform {
+		width: 420px;
+		background-color: #b4b4b4;
+	}
+
+    /*MAP*/
+	#map {
+		width: 420px;
+		background-color: #d6d6d6;
+	}
+
+	/*FOOTER*/
+	footer {
+		height: 34px;
+		background-color: #f9f9f9;
+		font-size: 10px;
+		line-height: 34px;
+		color: #90af9d;
+	}
+
+	footer p {
+		margin-left: 10px;
+	}
