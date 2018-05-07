@@ -266,23 +266,40 @@
 
 	/* ---CONTACT PAGE--- */
 
+  #contactcontainer {
+    display: flex;
+  }
+
 	/*CONTACT INFO*/
 	#contactinfo {
+    flex: 1;
 		width: 420px;
+    height: 500px;
 		background-color: #d6d6d6;
 	}
 
     /*CONTACT FORM*/
 	#contactform {
+    flex: 1;
 		width: 420px;
+    height: 500px;
 		background-color: #b4b4b4;
 	}
 
     /*MAP*/
 	#map {
+    flex: 1;
 		width: 420px;
+    height: 500px;
 		background-color: #d6d6d6;
-	}
+ }
+
+ #map iframe {
+   width: 420px;
+   height: 500px;
+   frameborder: 0;
+   style: border: 0;
+ }
 
 	/*FOOTER*/
 	footer {
