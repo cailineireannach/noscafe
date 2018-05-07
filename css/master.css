@@ -48,6 +48,17 @@
 		 font-size: 23px;
 	}
 
+   /* FOR TABLETS */
+  @media only screen and (max-width: 600px) {
+
+   body {
+     width: 100%;
+   }
+
+
+
+  }
+
 	/* ---HOMEPAGE--- */
 
 	/*SLIDER*/
@@ -273,23 +284,41 @@
 	/*CONTACT INFO*/
 	#contactinfo {
     flex: 1;
-		width: 420px;
     height: 500px;
-		background-color: #d6d6d6;
+		background-image: url("../images/contactbk.png");
 	}
+
+  #contactinfo h3, #contactinfo p {
+    display: inline;
+  }
+
+  .textcenter {
+    width: 60%;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 50%;
+    font-size: 20px;
+  }
+
+  #contactinfo h3 {
+    font-weight: bold;
+  }
 
     /*CONTACT FORM*/
 	#contactform {
     flex: 1;
-		width: 420px;
     height: 500px;
-		background-color: #b4b4b4;
+		background-color: #fff;
 	}
+
+  #contactform h2 {
+    font-size: 20px;
+    color: red;
+  }
 
     /*MAP*/
 	#map {
     flex: 1;
-		width: 420px;
     height: 500px;
 		background-color: #d6d6d6;
  }
