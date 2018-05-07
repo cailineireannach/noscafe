@@ -56,29 +56,29 @@
 	}
 
 	/*EVENTS*/
-	#events {
+	#eventbar {
 		display: flex;
 		border-top: 10px solid #f9f9f9;
 		border-bottom: 10px solid #f9f9f9;
 	}
 
-	#events img {
+	#eventbar img {
 		opacity: 0.5;
 	}
 
-	#event1:hover img{
+	#eventbar1:hover img{
 	    opacity: 1;
 	}
 
-  #event2:hover img{
+  #eventbar2:hover img{
       opacity: 1;
   }
 
-  #event3:hover img{
+  #eventbar3:hover img{
       opacity: 1;
   }
 
-  #event4:hover img{
+  #eventbar4:hover img{
       opacity: 1;
   }
 
@@ -154,7 +154,7 @@
 
 	.sections {
 	    width: 100%;
-	    height: 275px;
+	    height: auto;
 	 	  background-color: #dbdad8;
 	}
 
@@ -165,7 +165,7 @@
     font-size: 20px;
   }
 
-  .text {
+  .sections .text {
     font-size: 15px;
     flex: 1;
     background-color: #c7d7ce;
@@ -207,6 +207,60 @@
 
 
 	/* ---EVENTS PAGE--- */
+
+  .events {
+	    width: 100%;
+	    height: auto;
+	 	  background-color: #dbdad8;
+	}
+
+  .head {
+  /*  background-color: #a1afa7; */
+    font-size: 15px;
+    width: 200px;
+    padding: 20px;
+    background-image: url("../images/eventsbk.png");
+  }
+
+  .head p {
+    background-color: #c7d7ce;
+    padding: 10px;
+  }
+
+  .events h2 {
+    font-size: 17px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+
+  .events h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #79a08a;
+    font-size: 20px;
+  }
+
+  .events .text {
+    font-size: 15px;
+    flex: 1;
+    background-color: #c7d7ce;
+    padding: 40px;
+    /* border-radius: 0px 15px 15px 0px; */
+  }
+
+	/*UPCOMING EVENTS*/
+    #upcomingevents {
+      display: flex;
+      padding: 30px;
+    }
+
+	/*PAST EVENTS*/
+    #pastevents {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+  }
+
 
 	/* ---MENU PAGE---*/
 
