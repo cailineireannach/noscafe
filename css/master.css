@@ -48,23 +48,52 @@
 		 font-size: 23px;
 	}
 
-   /* FOR TABLETS */
-  @media only screen and (max-width: 600px) {
+  nav .icon {
+      display: none;
+  }
 
-   body {
-     width: 100%;
+   nav a .gael {
+    display: none;
    }
 
+   nav a:hover .eng {
+     display: none;
+   }
 
-
-  }
+  nav a:hover .gael {
+     display: inherit;
+   }
 
 	/* ---HOMEPAGE--- */
 
 	/*SLIDER*/
 	#slider {
-		height: 305px;
+		height: 500px;
+    height: 1260;
+    position: relative;
 	}
+
+  #slider img {
+    width: 100%;
+  }
+
+  /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 	/*EVENTS*/
 	#eventbar {
@@ -75,23 +104,39 @@
 
 	#eventbar img {
 		opacity: 0.5;
+		flex: 1;
 	}
 
 	#eventbar1:hover img{
 	    opacity: 1;
 	}
 
-  #eventbar2:hover img{
+    #eventbar2:hover img{
+       opacity: 1;
+  }
+
+    #eventbar3:hover img{
       opacity: 1;
   }
 
-  #eventbar3:hover img{
+    #eventbar4:hover img{
       opacity: 1;
   }
 
-  #eventbar4:hover img{
-      opacity: 1;
-  }
+    #eventbar1 {
+	  position: relative;
+	}
+
+    #eventbar1 p {
+	  position: absolute;
+	  opacity: 1;
+	  top: 50%;
+      left: 50%;
+	}
+
+	 #eventbar1 p:hover {
+	  opacity: 1;
+	}
 
 	/*BOTTOM*/
 	#bottom {
@@ -166,26 +211,26 @@
 	.sections {
 	    width: 100%;
 	    height: auto;
-	 	  background-color: #dbdad8;
+	 	background-color: #dbdad8;
 	}
 
-  .sections h2 {
-    padding-bottom: 10px;
-    font-weight: bold;
-    color: #79a08a;
-    font-size: 20px;
+    .sections h2 {
+       padding-bottom: 10px;
+       font-weight: bold;
+       color: #79a08a;
+       font-size: 20px;
   }
 
-  .sections .text {
-    font-size: 15px;
-    flex: 1;
-    background-color: #c7d7ce;
-    padding: 40px;
-    border-radius: 0px 15px 15px 0px;
+    .sections .text {
+      font-size: 15px;
+      flex: 1;
+      background-color: #c7d7ce;
+      padding: 40px;
+      border-radius: 0px 15px 15px 0px;
   }
 
-  .sections img {
-    border-radius: 15px 0px 0px 15px;
+    .sections img {
+      border-radius: 15px 0px 0px 15px;
   }
 
 	/*SECTION 1*/
@@ -318,17 +363,17 @@
 
     /*MAP*/
 	#map {
-    flex: 1;
-    height: 500px;
-		background-color: #d6d6d6;
- }
+     flex: 1;
+     height: 500px;
+     background-color: #d6d6d6;
+   }
 
- #map iframe {
+   #map iframe {
    width: 420px;
    height: 500px;
    frameborder: 0;
    style: border: 0;
- }
+    }
 
 	/*FOOTER*/
 	footer {
@@ -342,3 +387,78 @@
 	footer p {
 		margin-left: 10px;
 	}
+
+		  /* FOR TABLETS */
+  @media screen and (max-width: 600px) {
+
+       body {
+        width: 100%;
+      }
+
+       nav a {
+        display: none;
+      }
+
+      nav a.icon {
+        float: right;
+        display: block;
+        font-size: 30px;
+      }
+
+      nav.responsive {
+        position: relative;
+      }
+
+      nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      #logo {
+        display: none;
+      }
+
+      #slider {
+	    width: 100%;
+	  }
+
+	    #slider img{
+	    width: 100%;
+	  }
+
+      #eventbar {
+	    display: flex;
+		  flex-direction: column;
+		  flex-wrap: wrap;
+		  display: block;
+	  }
+
+	    #eventbar img {
+	    flex: 50%;
+	  }
+
+	    #info {
+	    width: 100%;
+	  }
+
+	    #bottom {
+	    width: 100%;
+	   	display: flex;
+		  flex-direction: column;
+		  flex-wrap: wrap;
+		  display: block;
+	  }
+
+      footer {
+	    display: flex;
+	  	display: block;
+	  	width: 100%;
+	  }
+
+   }

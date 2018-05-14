@@ -18,26 +18,48 @@
   <!-- HEADER -->
   <header>
     <div id="logo">
-	<img src="images/logo.png">
+	<a href="index.html"><img src="images/logo.png"></a>
 	</div>
 	<nav>
-	  <a href="index.html">Home</a>
-	  <a href="about.html">About</a>
-	  <a href="events.html">Events</a>
-	  <a href="menu.html">Menu</a>
-	  <a href="contact.html">Contact</a>
+	  <a href="index.html"><span class="eng">Home</span>  <span class="gael">Baile</span></a>
+	  <a href="about.html"><span class="eng">About</span>  <span class="gael">Eolas</span></a>
+	  <a href="events.html"><span class="eng">Events</span>  <span class="gael">Imeachtaí</span></a>
+	  <a href="menu.html"><span class="eng">Menu</span>  <span class="gael">Biachlár</span></a>
+	  <a href="contact.html"><span class="eng">Contact</span>  <span class="gael">Teagmháil</span></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</nav>
   </header>
 
   <!-- SLIDER -->
   <div id="slider">
-    <img src="images/slider.png">
+
+    <div class="slides fade">
+      <img src="images/slider1.png">
+    </div>
+
+    <div class="slides fade">
+       <img src="images/slider2.png">
+    </div>
+
+    <div class="slides fade">
+       <img src="images/slider3.png">
+    </div>
+
+    <div class="slides fade">
+       <img src="images/slider4.png">
+    </div>
+
+    <div class="slides fade">
+       <img src="images/slider5.png">
+    </div>
+
   </div>
 
   <!-- EVENTS -->
   <div id="eventbar">
     <div id="eventbar1">
 	  <a href="#"><img src="images/event1.png" alt=""></a>
+	  <p>Trad Music</p>
 	</div>
 	<div id="eventbar2">
 	  <a href="#"><img src="images/event2.png" alt=""></a>
@@ -80,6 +102,8 @@
   <footer>
     <p>© Nikita Owens 2018</p>
   </footer>
+
+  <script src="js/custom.js"></script>
 
 </body>
 
