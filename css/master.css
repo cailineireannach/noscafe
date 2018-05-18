@@ -19,20 +19,20 @@
 
 	a {
 	   text-decoration: none;
-	   color: #90af9d;
+	   color: #90bba6;
 	}
 
 	/*HEADER*/
 	header {
 		display: flex;
-		background-color: #f9f9f9;
+		background-color: #fff;
 	}
 
 	#logo {
         clear: left;
 	}
 
-  #logo .tab {
+  #logo img.tab {
     display: none;
   }
 
@@ -55,6 +55,7 @@
 
   #menu-icon {
   	display: none;
+    color: #90bba6;
   }
 
    nav a .gael {
@@ -82,7 +83,7 @@
     width: 100%;
   }
 
-  /* Fading animation */
+  /* FADE */
     .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -111,6 +112,10 @@
 		opacity: 0.5;
 		flex: 1;
 	}
+
+  .tab {
+    display: none;
+  }
 
 	#eventbar1:hover img{
 	    opacity: 1;
@@ -150,7 +155,7 @@
 
 	#info {
     display: flex;
-		background-color: #636363;
+		background-color: #434343;
 		padding: 60px;
 	}
 
@@ -166,7 +171,7 @@
 	}
 
 	#info #information span {
-		color: #90af9d;
+		color: #90bba5;
 	}
 
 	#info #information p {
@@ -190,14 +195,14 @@
 
     #message {
 		flex: 2;
-		background-color: #c8d8cf;
+		background-color: #90bba6;
 		padding: 80px;
 		text-align: center;
 	}
 
 	#message h2 {
 		font-size: 20px;
-		color: #90af9d;
+		color: #4A6E5C;
 		padding: 5px;
 	}
 
@@ -221,7 +226,7 @@
   }
 
   #message span {
-    color: #91a090;
+    color: #4A6E5C;
   }
 
 	/* ---ABOUT PAGE--- */
@@ -229,20 +234,21 @@
 	.sections {
 	    width: 100%;
 	    height: auto;
-	 	  background-color: #dbdad8;
+	 	  background-color: #90bba5;
 	}
 
     .sections h2 {
        padding-bottom: 10px;
        font-weight: bold;
-       color: #79a08a;
+       color: #90bba5;
        font-size: 20px;
   }
 
     .sections .text {
+      color: #434343;
       font-size: 15px;
       flex: 1;
-      background-color: #c7d7ce;
+      background-color: #fff;
       padding: 40px;
       border-radius: 0px 15px 15px 0px;
   }
@@ -285,23 +291,23 @@
   .events {
 	    width: 100%;
 	    height: auto;
-	 	  background-color: #dbdad8;
+	 	  background-color: #90bba5;
 	}
 
   .head {
-  /*  background-color: #a1afa7; */
     font-size: 15px;
     width: 200px;
     padding: 20px;
-    background-image: url("../images/eventsbk.png");
+    background-image: url("");
   }
 
   .head p {
-    background-color: #c7d7ce;
+    background-color: #90bba5;
     padding: 10px;
   }
 
   .events h2 {
+    color: #4A6E5C;
     font-size: 17px;
     line-height: 40px;
     font-weight: bold;
@@ -310,14 +316,15 @@
   .events h3 {
     padding-bottom: 10px;
     font-weight: bold;
-    color: #79a08a;
+    color: #90bba5;
     font-size: 20px;
   }
 
   .events .text {
+    color: #434343;
     font-size: 15px;
     flex: 1;
-    background-color: #c7d7ce;
+    background-color: #fff;
     padding: 40px;
     /* border-radius: 0px 15px 15px 0px; */
   }
@@ -342,6 +349,7 @@
 
   #contactcontainer {
     display: flex;
+    justify-content: center;
   }
 
 	/*CONTACT INFO*/
@@ -349,18 +357,11 @@
     flex: 1;
     height: 500px;
 		background-image: url("../images/contactbk.png");
+    justify-content: center;
 	}
 
   #contactinfo h3, #contactinfo p {
     display: inline;
-  }
-
-  .textcenter {
-    width: 60%;
-    line-height: 30px;
-    margin: auto;
-    margin-top: 50%;
-    font-size: 20px;
   }
 
   #contactinfo h3 {
@@ -376,30 +377,28 @@
 
   #contactform h2 {
     font-size: 20px;
-    color: red;
+    color: #90bba5;
   }
 
     /*MAP*/
 	#map {
      flex: 1;
      height: 500px;
-     background-color: #d6d6d6;
+     background-color: #fff;
    }
 
    #map iframe {
-   width: 420px;
+   width: 100%;
    height: 500px;
-   frameborder: 0;
-   style: border: 0;
     }
 
 	/*FOOTER*/
 	footer {
 		height: 34px;
-		background-color: #f9f9f9;
+		background-color: #fff;
 		font-size: 10px;
 		line-height: 34px;
-		color: #90af9d;
+		color: #90bba5;
 	}
 
 	footer p {
@@ -454,23 +453,33 @@
         display: none;
       }
 
-      #logo {
+      #logo img.lap {
         display: none;
       }
 
-      #logo.tab {
+       #logo img.tab {
         display: flex;
-        z-index: 1;
+        z-index: 4;
       }
 
       #slider {
-	    display: none;
+	   width: 100%;
+     height: auto;
 	  }
 
       #eventbar {
 	    display: flex;
       flex-wrap: wrap;
 	  }
+
+    .tab {
+      display: none;
+      line-height: 30px;
+      background-color: #fff;
+      font-size: 28px;
+      padding: 5px 0px 5px 10px;
+
+    }
 
     #eventbar1, #eventbar2, #eventbar3, #eventbar4 {
       width: 50%;
@@ -485,14 +494,62 @@
       height: 100%;
 	  }
 
-    #info, #message {
-    }
-
      #bottom p, #bottom a, #bottom h2 {
        font-size: 18px;
      }
 
-      footer {
-	  }
+  /* --- ABOUT PAGE--- */
+
+  .sections .text {
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .sections img {
+    display: none;
+  }
+
+/* --- EVENTS PAGE--- */
+
+  .head {
+    background-image: none;
+    width: 100%;
+   }
+
+   .head li {
+     display: none;
+   }
+
+   .events .text {
+     font-size: 14px;
+     padding: 20px;
+   }
+
+   .events h2 {
+     display: block;
+     font-size: 30px;
+     width: 100%;
+     line-height: 30px;
+     text-align: center;
+   }
+
+   .events {
+     margin: auto;
+     height: 370px;
+   }
+
+   #upcomingevents, #pastevents {
+     display: block;
+     height: 100%;
+   }
+
+   /*---CONTACT PAGE---*/
+
+   #contactcontainer {
+     flex-direction: column;
+   }
+
+#contactinfo, #contactform, #map {
+  width: 100%;
+}
 
    }
