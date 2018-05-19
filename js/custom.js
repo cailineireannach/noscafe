@@ -1,4 +1,4 @@
-// responsive nav: w3schools
+
 
 // slideshow: w3 schools
 var myIndex = 0;

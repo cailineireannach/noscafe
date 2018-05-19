@@ -41,6 +41,10 @@
 		width: 100%;
 	}
 
+  #nav-pic {
+    display: none;
+  }
+
 	nav a {
 		line-height: 170px;
 		flex: 1;
@@ -428,6 +432,10 @@
         font-size: 25px;
       }
 
+      #nav-pic {
+        display: none;
+      }
+
     	nav a {
         background-color: #fff;
         font-size: 15px;
@@ -553,3 +561,162 @@
 }
 
    }
+
+
+   /* FOR PHONES */
+@media screen and (max-width: 360px) {
+
+
+  body {
+   max-width: 360px;
+   margin: 0;
+ }
+
+ nav {
+   width: 100%;
+   height: 50px;
+   z-index: 1;
+ }
+
+ #menu-icon {
+   display:none;
+ }
+
+ #nav-pic {
+   display: block;
+   width: 100%;
+   height: 400px;
+   background-image: url("../images/navpic.png");
+ }
+
+ nav a {
+   font-size: 15px;
+   display: block;
+   margin-top: 40px;
+   margin-left: 120px;
+   padding: 5px;
+   text-align: center;
+   background: #fff;
+   border-radius: 20px 20px 20px 20px;
+ }
+
+ nav a:first-of-type {
+   margin-top: 110px;
+ }
+
+ nav a:last-of-type {
+   border-radius: 20px 20px 20px 20px;
+ }
+
+ nav:hover a {
+   font-size: 15px;
+ }
+
+ #logo img.lap, #logo img.tab, #slider {
+   display: none;
+ }
+
+ #eventbar {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.tab {
+ display: none;
+}
+
+#eventbar1, #eventbar2, #eventbar3, #eventbar4 {
+ width: 50%;
+}
+
+#eventbar img {
+ width: 100%;
+}
+
+ #bottom {
+ display: block;
+ width: 100%;
+ height: 100%;
+}
+
+#bottom p, #bottom a, #bottom h2 {
+  font-size: 15px;
+  width: 250px;
+  margin-left: -30px;
+}
+
+#info img {
+  display: none;
+}
+
+#info #information p{
+  font-size: 13px;
+}
+
+/* --- ABOUT PAGE--- */
+
+.sections .text {
+border-radius: 15px 15px 15px 15px;
+}
+
+.sections img {
+display: none;
+}
+
+/* --- EVENTS PAGE--- */
+
+.head {
+background-image: none;
+width: 100%;
+}
+
+.head li {
+display: none;
+}
+
+.events .text {
+font-size: 14px;
+padding: 20px;
+}
+
+.events h2 {
+display: block;
+font-size: 30px;
+width: 100%;
+line-height: 30px;
+text-align: center;
+}
+
+.events {
+margin: auto;
+height: 370px;
+}
+
+#upcomingevents, #pastevents {
+display: block;
+height: 100%;
+}
+
+/*---CONTACT PAGE---*/
+
+#contactcontainer {
+flex-direction: column;
+}
+
+#contactinfo, #contactform, #map {
+width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
